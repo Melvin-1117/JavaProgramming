@@ -29,6 +29,8 @@ public class TwistedPrime{
                  else{
                 System.out.println("Not a prime.");
             }
+            }else{
+                System.out.println("The entered number is not a prime");
             }
            
         
