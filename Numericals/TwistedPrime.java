@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class TwistedPrime{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: 1");
         int n= sc.nextInt();
         int temp=n;
         int count=0;
