@@ -18,6 +18,8 @@ public class Anagram {
             }
             if (count == str1.length()) {
                 System.out.print("Anagram");
+            } else{
+                System.out.print("Not a anagram");
             }
         }
     }
