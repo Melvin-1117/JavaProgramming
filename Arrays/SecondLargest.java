@@ -7,14 +7,14 @@ public class SecondLargest {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        int largest=0;
-        for(int i=0;i<n;i++){
+        int largest=arr[0];
+        for(int i=1;i<n;i++){
             if(arr[i]>largest){
                 largest=arr[i];
             }
         }
         System.out.println(largest);
-        int seclar=-1;
+        int seclar=arr[0];
         for(int i=0;i<n;i++){
             if(arr[i]>seclar && arr[i]!=largest){
                 seclar=arr[i];
