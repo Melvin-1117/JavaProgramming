@@ -12,7 +12,7 @@ public class MaxIncol {
             }
         }
         for (int i = 0; i < c; i++) {
-            int max=arr[0][0];
+            int max=arr[0][i];
             for (int j = 0; j < r; j++) {
                 if (arr[j][i] > max) {
                     max = arr[j][i];
