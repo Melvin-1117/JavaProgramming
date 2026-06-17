@@ -12,7 +12,7 @@ public class MaxInRow {
             }
         }
         for (int i = 0; i < r; i++) {
-            int max=arr[0][0];
+            int max=arr[i][0];
             for (int j = 0; j < c; j++) {
                 if (arr[i][j] > max) {
                     max = arr[i][j];
