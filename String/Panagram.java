@@ -3,23 +3,25 @@ public class Panagram {
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         String input=sc.nextLine();
-        int count=0;
-        for(char ch='a';ch<='z';ch++) {
-            for (int i = 0; i < input.length(); i++) {
-                char ch1 = input.charAt(i);
-                if (ch1 >= 'A' && ch1 <= 'Z') {
-                    ch1 = (char) (ch1 + 32);
-                }
-                if (ch == ch1) {
-                    count++;
-                    break;
-                }
+        int arr[] = new int[256];
+        for(int i=0;i<input.length();i++){
+            char ch=input.charAt(i);
+            if(ch>='A'&&ch<='Z'){
+                ch=(char)(ch+32);
+            }
+            arr[ch]++;
+        }
+        int flag=0;
+        for(int i='a';i<='z';i++){
+            if(arr[i]==0){
+                flag=1;
+                break;
             }
         }
-            if (count == 26) {
-                System.out.print("Panagaram");
-            } else {
-                System.out.print("Not Panagaram");
-            }
+        if (flag == 0) {
+            System.out.print("Pangram");
+        }else{
+            System.out.print("Not pangram");
+        }
     }
 }
