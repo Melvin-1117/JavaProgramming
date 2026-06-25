@@ -13,13 +13,11 @@ public class SecondLargest {
                 largest=arr[i];
             }
         }
-        System.out.println(largest);
         int seclar=arr[0];
         for(int i=0;i<n;i++){
             if(arr[i]>seclar && arr[i]!=largest){
                 seclar=arr[i];
-            }
-        }
+            }        }
         System.out.println(seclar);
     }
     
